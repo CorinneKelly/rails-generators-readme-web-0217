@@ -5,6 +5,7 @@ class PostsController < ApplicationController
 
   def show
   	@post = Post.find(params[:id])
+    @post = true if @post == "t"
   end
 
   def new
